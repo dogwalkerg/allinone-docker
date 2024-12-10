@@ -48,4 +48,11 @@ docker push ghcr.io/dogwalkerg/allinone-docker/allinone
 
 创建 token
 ① 在 GitHub 任何页面的右上角，单击你的头像，然后单击 Settings。
-![图片描述](./1.png)
+<br>![图片描述](./1.png)
+<br>② 在左侧边栏中，单击 Developer settings。
+<br>![图片描述](./2.png)
+<br>③ 在左侧边栏中，单击 Personal access tokens。
+<br>![图片描述](./3.png)
+<br>④ 单击 Generate new token。
+<br>⑥ 选择 read:packages 以下载容器镜像，读取元数据；选择 write:packages 以下载上传容器镜像，读取写入元数据；选择 delete:packages 以删除容器镜像。
+<br>![图片描述](./4.png)
