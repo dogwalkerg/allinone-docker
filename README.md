@@ -2,7 +2,7 @@
 中国IPTV直播源部署docker-live
 
 
-1、allinone指令：
+####1、allinone指令：
 <br>docker run -d --restart unless-stopped --net=host --privileged=true -p 35455:35455 --name allinone youshandefeiyang/allinone
 <br>docker run -d --restart unless-stopped --net=host --privileged=true -p 35455:35455 --name allinone ghcr.io/dogwalkerg/allinone-docker/allinone
 
