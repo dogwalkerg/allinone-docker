@@ -1,4 +1,4 @@
-## allinone-docker
+# allinone-docker
 中国IPTV直播源部署docker-live
 
 
@@ -46,7 +46,7 @@ docker tag youshandefeiyang/allinone ghcr.io/dogwalkerg/allinone-docker/allinone
 Github仓库新建allinone-docker存储镜像仓库名后，直接推送成功，如下命令：
 docker push ghcr.io/dogwalkerg/allinone-docker/allinone
 
-##### 创建 token
+# 创建 token
 ① 在 GitHub 任何页面的右上角，单击你的头像，然后单击 Settings。
 <br>![图片描述](./1.png)
 <br>② 在左侧边栏中，单击 Developer settings。
