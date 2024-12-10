@@ -4,6 +4,7 @@
 
 1、allinone指令：
 docker run -d --restart unless-stopped --net=host --privileged=true -p 35455:35455 --name allinone youshandefeiyang/allinone
+docker run -d --restart unless-stopped --net=host --privileged=true -p 35455:35455 --name allinone ghcr.io/dogwalkerg/allinone-docker/allinone
 
 2、配置watchtower每天凌晨两点自动监听allinone镜像更新指令：
 docker run -d --name watchtower2 --restart unless-stopped -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower allinone -c --schedule "0 0 2 * * *"
