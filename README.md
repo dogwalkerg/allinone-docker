@@ -45,3 +45,7 @@ ssh登陆   docker login ghcr.io -u dogwalkerg -p ghp_VTDEdk6HZETHtkJg347jMWiaQW
 docker tag youshandefeiyang/allinone ghcr.io/dogwalkerg/allinone-docker/allinone               #前面为本地镜像，后面为改名后镜像名
 Github仓库新建allinone-docker存储镜像仓库名后，直接推送成功，如下命令：
 docker push ghcr.io/dogwalkerg/allinone-docker/allinone
+
+创建 token
+① 在 GitHub 任何页面的右上角，单击你的头像，然后单击 Settings。
+![图片描述](./1.png)
