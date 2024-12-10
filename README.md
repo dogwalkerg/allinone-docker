@@ -7,7 +7,7 @@
 <br>docker run -d --restart unless-stopped --net=host --privileged=true -p 35455:35455 --name allinone ghcr.io/dogwalkerg/allinone-docker/allinone
 
 2、配置watchtower每天凌晨两点自动监听allinone镜像更新指令：
-docker run -d --name watchtower2 --restart unless-stopped -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower allinone -c --schedule "0 0 2 * * *"
+<br>docker run -d --name watchtower2 --restart unless-stopped -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower allinone -c --schedule "0 0 2 * * *"
 
 上面2步就可以得到播放地址了：http://<IP替换>:35455/tv.m3u
 
@@ -15,10 +15,10 @@ docker run -d --name watchtower2 --restart unless-stopped -v /var/run/docker.soc
 
 进阶优化：
 3、直播源镜像 youshandefeiyang/allinone 项目的 m3u 进行重新分组格式化：
-docker run -d --restart=always -p 35456:35456 --name allinone_format yuexuangu/allinone_format:latest
+<br>docker run -d --restart=always -p 35456:35456 --name allinone_format yuexuangu/allinone_format:latest
 
 
-http://内网IP:35456/tv.php?h=allinoneIP&p=allinonePort&m=1&t=0
+<br>http://内网IP:35456/tv.php?h=allinoneIP&p=allinonePort&m=1&t=0
 
 请求参数说明：
 h 可选参数 allinone 项目部署的内外网 IP或域名（不能使用 127.0.0.1），默认值 = 请求的内网IP
@@ -30,11 +30,11 @@ m 可选参数 是否对频道连接进行聚合，默认值 1=聚合（强烈�
 t 可选参数 输出格式 默认值 0=m3u， 1=text
 
 @请求例子：
-http://<IP替换>:35456/tv.php
+<br>http://<IP替换>:35456/tv.php
 
 上面请求等同于
 （这就是优化后的播放地址：）
-http://<IP替换>:35456/tv.php?h=<IP替换>&p=35455&m=1&t=0
+<br>http://<IP替换>:35456/tv.php?h=<IP替换>&p=35455&m=1&t=0
 
 （上面的<IP替换>包括括号都替换成你的设备IP）
 
